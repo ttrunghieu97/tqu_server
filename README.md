@@ -12,15 +12,26 @@ Install
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
 sudo bash miniconda.sh -b -u -p /opt/miniconda3
 ```
-Activate shell (first time)
+Activate shell (bash, zsh, fish,...) - only first time
 ``` 
 source /opt/miniconda3/bin/activate
 conda init <shell>
 ```
-shell: bash, zsh, fish,...
-
-# Google drive
-Copy config (only first time):
+Usage:  
+Create a New Environment  
+```
+conda create -n myenv python=3.9
+```
+Activate an Environment
+```
+conda activate myenv
+```
+Deactivate the Current Environment
+```
+conda deactivate
+```
+# Dowload from Google drive
+Copy config - only first time:
 ```
 cd ~ 
 cp -r /home/hieutt/.config/ .config/ 
@@ -59,7 +70,7 @@ sudo apt-get -y install cuda-toolkit-12-4
 sudo reboot
 ```
 # Pytorch
-Recommend this version for cuda12.4
+Recommend torch version for cuda12.4
 ```
 conda install pytorch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 pytorch-cuda=12.4 -c pytorch -c nvidia
 ```
