@@ -11,6 +11,7 @@ source /opt/miniconda3/bin/activate
 conda init <your shell>
 ```
 ## Download from google drive
+Copy config 
 Downloading a single file:
 ```
 gdrive files download <file id>
@@ -20,5 +21,7 @@ Downloading a directory:
 gdrive files download --recursive <file id (directory)>
 ```
 ## Download from other host:
-wget or curl
-
+Using CurlWget
+``` 
+https://chromewebstore.google.com/detail/curlwget/dgcfkhmmpcmkikfmonjcalnjcmjcjjdn
+```
