@@ -2,11 +2,23 @@ Guild for using TQU server
 
 OS: Debian GNU/Linux 11 (bullseye) x86_64
 
+# Connect to server:
+## Windows:
+1. Download and install [Tailscale](https://tailscale.com/download/windows)
+2. Open PowerShell or CMD and run:
+```
+tailscale up --auth-key=tskey-auth-kDyPXPQtpC21CNTRL-av45nTp1uyf4efFTx5S4zfDMaAoLwWtFW
+```
+## Linux:
+Open terminal and run:
+```
+curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up --auth-key=tskey-auth-kDyPXPQtpC21CNTRL-av45nTp1uyf4efFTx5S4zfDMaAoLwWtFW
+```
 # Set time 
 ```
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 ```
-# Conda:
+# Conda [cheatsheet](https://docs.conda.io/projects/conda/en/stable/user-guide/cheatsheet.html#cheatsheet):
 Install
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
@@ -30,7 +42,7 @@ Deactivate the Current Environment
 ```
 conda deactivate
 ```
-# Dowload from Google drive
+# Dowload file from Google [gdrive](https://github.com/glotlabs/gdrive):
 Copy config - only first time:
 ```
 cd ~ 
@@ -44,11 +56,9 @@ Downloading a directory:
 ```
 gdrive files download --recursive <file id (directory)>
 ```
+
 # Download from other host:
-Using CurlWget
-``` 
-https://chromewebstore.google.com/detail/curlwget/dgcfkhmmpcmkikfmonjcalnjcmjcjjdn
-```
+Using [CurlWget](https://chromewebstore.google.com/detail/curlwget/dgcfkhmmpcmkikfmonjcalnjcmjcjjdn) 
 # Secure Copy:
 ```
 scp -r /local/directory user@remote_host:/remote/destination
