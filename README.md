@@ -64,7 +64,11 @@ Using [CurlWget](https://chromewebstore.google.com/detail/curlwget/dgcfkhmmpcmki
 scp -r /local/directory user@remote_host:/remote/destination
 ```
 # Matlab:
-mount 
+```
+ ./install -fileInput input.txt
+./install -mode silent -fileInput input.txt
+./install -mode silent -fileInput ${PWD}/input.txt
+```
 
 # Cuda 
 ```
